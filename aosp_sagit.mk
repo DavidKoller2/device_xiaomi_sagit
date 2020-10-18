@@ -27,6 +27,9 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 #If you don't have below ones it's okay to build
 # MiuiCamera
 $(call inherit-product-if-exists, vendor/apps/MiuiCamera/config.mk)
+# GoogleCamera
+$(call inherit-product-if-exists, vendor/apps/GoogleCamera/config.mk)
+
 # Firmware
 $(call inherit-product, vendor/apps/firmware-sagit/config.mk)
 
