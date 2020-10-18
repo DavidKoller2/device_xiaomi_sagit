@@ -23,14 +23,18 @@ $(call inherit-product, device/xiaomi/sagit/device.mk)
 
 # Inherit some common AOSP stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-
+#<--------------selective ones--------------------------------------->
+#If you don't have below ones it's okay to build
 # MiuiCamera
 $(call inherit-product-if-exists, vendor/apps/MiuiCamera/config.mk)
 # Firmware
-#$(call inherit-product, vendor/apps/firmware-sagit/config.mk)
+$(call inherit-product, vendor/apps/firmware-sagit/config.mk)
 
 # ScreenRecorder
 $(call inherit-product-if-exists, vendor/apps/OPScreenRecord/config.mk)
+
+# FaceUnlock
+$(call inherit-product-if-exists, vendor/apps/FaceUnlock/config.mk)
 
 PRODUCT_NAME := aosp_sagit
 PRODUCT_DEVICE := sagit
