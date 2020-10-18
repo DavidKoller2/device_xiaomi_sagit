@@ -35,6 +35,7 @@ $(call inherit-product-if-exists, vendor/apps/OPScreenRecord/config.mk)
 
 # FaceUnlock
 $(call inherit-product-if-exists, vendor/apps/FaceUnlock/config.mk)
+#<-------------------------------------------------------------------->
 
 PRODUCT_NAME := aosp_sagit
 PRODUCT_DEVICE := sagit
