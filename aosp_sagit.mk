@@ -31,7 +31,7 @@ $(call inherit-product-if-exists, vendor/apps/MiuiCamera/config.mk)
 $(call inherit-product-if-exists, vendor/apps/GoogleCamera/config.mk)
 
 # Firmware
-$(call inherit-product, vendor/apps/firmware-sagit/config.mk)
+$(call inherit-product-if-exists, vendor/apps/firmware-sagit/config.mk)
 
 # ScreenRecorder
 $(call inherit-product-if-exists, vendor/apps/OPScreenRecord/config.mk)
